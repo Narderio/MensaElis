@@ -74,19 +74,3 @@ def get_menu():
         "data": today,
         "menu": menu
     }
-
-# Esegui la funzione e mostra il risultato
-menu_of_the_day = get_menu()
-
-if menu_of_the_day:
-    print(f"Menu del giorno ({menu_of_the_day['data']}):")
-    for category, dishes in menu_of_the_day["menu"].items():
-        print(f"\n{category.capitalize()}:")
-        for dish in dishes:
-            print(f"{dish['piatto']} - {dish['ingredienti']}")
-            if dish['gluten_free']:
-                print("  Gluten Free")
-            if dish['lactose_free']:
-                print("  Lactose Free")
-            if dish['frozen']:
-                print("  Frozen")
