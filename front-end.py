@@ -18,7 +18,7 @@ st.markdown("""
             margin-bottom: 15px;
         }
         .menu-title {
-            font-size: 50px;
+            font-size: 24px;  /* Aumentato il font size */
             font-weight: bold;
             color: #2c3e50;
         }
