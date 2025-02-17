@@ -72,7 +72,7 @@ else:
                     st.markdown(f"""
                         <div class="menu-card">
                             <p class="menu-title">{dish['piatto']}</p>
-                            <p class="ingredienti">({dish['ingredienti']})</p>
+                            <p class="ingredienti">{dish['ingredienti']}</p>
                             <p class="allergen-icons">{allergen_html}</p>
                         </div>
                     """, unsafe_allow_html=True)
