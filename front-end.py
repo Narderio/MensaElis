@@ -39,6 +39,7 @@ st.title("🍽️ Menù del giorno")
 
 # Ottieni il menu dal sito
 menu = carica_menu.get_menu()
+print(menu)
 
 # Controllo se il menu è stato caricato con successo
 if not menu:
@@ -66,7 +67,7 @@ else:
                     if dish['frozen']:
                         allergen_info.append("❄️ <b>Surgelato</b>")
 
-                    allergen_html = "<br>".join(allergen_info) if allergen_info else "✅ <i>Nessun allergene segnalato</i>"
+                    allergen_html = "<br>".join(allergen_info) if allergen_info else ""
 
                     # Correggi HTML mal formato
                     st.markdown(f"""
